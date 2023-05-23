@@ -1,11 +1,11 @@
 server:
   port: 8081
   
-message: Spring Cloud Config api_user
+message: Spring Cloud Config apiUser
   
 spring:
   application:
-    name: api_user
+    name: apiUser
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3333/databasenotas?createDatabaseIfNotExist=true
