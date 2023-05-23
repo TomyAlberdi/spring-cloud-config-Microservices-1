@@ -1,0 +1,29 @@
+server:
+  port: 0
+  
+message: Spring Cloud Config Module2
+  
+spring:
+  application:
+    name: module2
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3333/databasenotas
+    username: root
+    password: root
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
