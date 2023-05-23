@@ -1,11 +1,11 @@
 server:
   port: 0
   
-message: Spring Cloud Config Module2
+message: Spring Cloud Config api-note
   
 spring:
   application:
-    name: module2
+    name: api-note
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3333/databasenotas
