@@ -8,7 +8,7 @@ spring:
     name: api_user
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3333/databasenotas
+    url: jdbc:mysql://localhost:3333/databasenotas?createDatabaseIfNotExist=true
     username: root
     password: root
 
