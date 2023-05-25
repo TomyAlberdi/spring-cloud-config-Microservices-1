@@ -11,11 +11,11 @@ spring:
           enabled: true
       routes:
         - id: userRoute
-          uri: http://localhost:8081
+          uri: lb://UserApi
           predicates:
             - Path=/users/**
         - id: noteRoute
-          uri: http://localhost:8082
+          uri: lb://NoteApi
           predicates:
             - Path=/notes/**
 
