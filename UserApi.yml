@@ -1,7 +1,5 @@
 server:
-  port: 0
-  
-message: Spring Cloud Config UserApi
+  port: ${PORT:${SERVER_PORT:0}}
   
 spring:
   application:
