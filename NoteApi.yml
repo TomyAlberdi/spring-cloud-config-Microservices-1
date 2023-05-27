@@ -1,6 +1,10 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
   
+info:
+  application:
+    name: NoteApi
+  
 spring:
   application:
     name: NoteApi
