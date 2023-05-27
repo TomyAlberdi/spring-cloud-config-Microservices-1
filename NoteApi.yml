@@ -4,9 +4,9 @@ server:
 ## Microservice info
 info:
   app:
-    name: NoteAPi
+    name: NoteAPI
     version: 1.0.0
-    description: NoteApi
+    description: NoteAPI description
   author: tomyalberdi
   
 ## Spring
