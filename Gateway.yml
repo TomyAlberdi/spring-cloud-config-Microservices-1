@@ -18,6 +18,20 @@ spring:
           uri: lb://NoteApi
           predicates:
             - Path=/notes/**
+      globalcors:
+        corsConfigurations:
+          '[0]':
+            allowedOrigins:
+              - http://localhost:5173
+              - http://192.168.0.183:5173
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
 
 info:
   app:
