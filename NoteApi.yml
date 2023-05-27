@@ -2,8 +2,11 @@ server:
   port: ${PORT:${SERVER_PORT:0}}
   
 info:
-  application:
-    name: NoteApi
+  app:
+    name: NoteAPi
+    version: 1.0.0
+    description: NoteApi
+  author: tomyalberdi
   
 spring:
   application:
@@ -37,7 +40,10 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 management:
+  info:
+    env:
+      enabled: true
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: info
