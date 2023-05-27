@@ -1,6 +1,15 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
   
+## Microservice info
+info:
+  app:
+    name: UserAPI
+    version: 1.0.0
+    description: UserAPI description
+  author: tomyalberdi
+  
+## Spring 
 spring:
   application:
     name: UserApi
@@ -21,9 +30,8 @@ spring:
       hibernate:
         format_sql: true
     show-sql: false
-    
 
-
+## Eureka Client
 eureka:
   instance:
     hostname: localhost
@@ -34,8 +42,12 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+## Actuator
 management:
+  info:
+    env:
+      enabled: true
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: info
