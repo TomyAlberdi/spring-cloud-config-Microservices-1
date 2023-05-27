@@ -1,6 +1,7 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
-  
+
+## Microservice info
 info:
   app:
     name: NoteAPi
@@ -8,6 +9,7 @@ info:
     description: NoteApi
   author: tomyalberdi
   
+## Spring
 spring:
   application:
     name: NoteApi
@@ -29,6 +31,7 @@ spring:
         format_sql: true
     show-sql: false
 
+## Eureka Client
 eureka:
   instance:
     hostname: localhost
@@ -39,6 +42,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+## Actuator
 management:
   info:
     env:
