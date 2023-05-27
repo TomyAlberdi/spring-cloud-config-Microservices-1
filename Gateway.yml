@@ -20,7 +20,7 @@ spring:
             - Path=/notes/**
       globalcors:
         corsConfigurations:
-          '[0]':
+          '[/**]':
             allowedOrigins: "*"
             allowedMethods:
               - GET
