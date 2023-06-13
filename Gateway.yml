@@ -30,6 +30,8 @@ spring:
               - OPTIONS
             allowedHeaders:
               - "*"
+  main:
+    allow-bean-definition-overriding: true
 
 info:
   app:
