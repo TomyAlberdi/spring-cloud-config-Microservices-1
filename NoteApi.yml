@@ -15,7 +15,7 @@ spring:
     name: NoteApi
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3333/databasenotas?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/databasenotas
     username: usr
     password: pwd
   jpa:
