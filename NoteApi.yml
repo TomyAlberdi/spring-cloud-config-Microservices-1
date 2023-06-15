@@ -30,6 +30,7 @@ spring:
       hibernate:
         format_sql: true
     show-sql: false
+  # Feign + Micrometer Tracing
   cloud:
     openfeign:
       micrometer:
@@ -46,8 +47,8 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-## Actuator
 management:
+  ## Actuator
   info:
     env:
       enabled: true
