@@ -51,3 +51,7 @@ management:
     web:
       exposure:
         include: info
+  ## Micrometer Tracing
+  tracing:
+    sampling:
+      probability: 1.0
