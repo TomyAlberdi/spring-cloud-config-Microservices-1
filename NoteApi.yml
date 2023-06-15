@@ -33,7 +33,7 @@ spring:
   cloud:
     openfeign:
       micrometer:
-        enabled: false
+        enabled: true
 
 ## Eureka Client
 eureka:
